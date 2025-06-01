@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+button {
+    padding: 12px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #2980b9;
+}
+#qr-result {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px dashed #ddd;
+    border-radius: 6px;
+}
+#qr-canvas {
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+#download-btn {
+    margin-top: 15px;
+    background: #27ae60;
+}
+#download-btn:hover {
+    background: #219653;
+}
+.ad-container {
+    margin: 25px 0;
+    overflow: hidden;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    .input-section {
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+    }
+}
